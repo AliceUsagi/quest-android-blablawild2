@@ -37,6 +37,12 @@ public class TripModel implements Parcelable {
         return date;
     }
 
+    public TripModel() {
+
+    }
+
+
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(departure);
@@ -60,4 +66,5 @@ public class TripModel implements Parcelable {
             return new TripModel[size];
         }
     };
+
 }
